@@ -99,7 +99,7 @@ body {
 .gallery .nav {
   justify-content: center;
 }
-.nav-pills .nav-link.active,
+.nav-pills .nav-link.active-tag,
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #beb45a;
