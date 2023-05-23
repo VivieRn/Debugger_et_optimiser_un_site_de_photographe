@@ -144,10 +144,9 @@
           index = i;
         }
       });
-      next =
-        imagesCollection[index] ||
-        imagesCollection[imagesCollection.length - 1];
+      next = imagesCollection[index - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
+      console.log(index);
     },
     nextImage() {
       let activeImage = null;
@@ -179,7 +178,7 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      next = imagesCollection[index + 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
