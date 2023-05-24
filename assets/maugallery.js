@@ -140,7 +140,7 @@
         next = null;
 
       $(imagesCollection).each(function (i) {
-        if ($(activeImage).attr("srcset") === $(this).attr("srcset")) {
+        if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i;
         }
       });
@@ -150,7 +150,6 @@
         next = imagesCollection[index - 1];
       }
       $(".lightboxImage").attr("srcset", $(next).attr("srcset"));
-      console.log(index);
     },
     nextImage() {
       let activeImage = null;
