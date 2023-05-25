@@ -1,0 +1,27 @@
+{
+    "name": "Nina Carducci - Photographe",
+    "short_name": "N.C. Photos",
+    "description": "Nina Carducci - Photographe preofessionelle",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "orientation" : "natural",
+    "background_color": "white",
+    "theme_color": "white",
+    "icons": [
+        {
+          "src": "/assets/images/camera_mini.png",
+          "sizes": "515x514",
+          "type": "image/png",
+          "purpose": "maskable"
+        },
+        {
+          "src": "/assets/images/camera_144px.png",
+          "sizes": "144x144",
+          "type": "image/png"
+        }
+    ],
+    "serviceworker": {
+      "src": "/serviceWorker.js"
+    }
+}
+  
