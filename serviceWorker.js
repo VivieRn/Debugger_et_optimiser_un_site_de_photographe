@@ -26,7 +26,15 @@ const whitelistedPathRegex = /^\/api\/(?!.*\.(?:jpe?g|png)$)[^/]*$/;
 const version = "v1";
 
 // Fichiers à mettre en cache
-const filesToCache = [];
+const filesToCache = [
+  "./serviceWorker.js",
+  "./assets/maugallery.js",
+  "./assets/scripts.js",
+  "./assets/bootstrap/bootstrap.bundle.js",
+  "./assets/bootstrap/bootstrap.bundle.js.map",
+  "./assets/bootstrap/bootstrap.bundle.min.js",
+  "./assets/bootstrap/bootstrap.bundle.min.js.map",
+];
 
 // Vérifie si l'origine est autorisée
 function isWhitelistedOrigin(request) {
