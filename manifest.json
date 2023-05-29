@@ -9,8 +9,8 @@
     "theme_color": "white",
     "icons": [
         {
-          "src": "/assets/images/camera_mini.png",
-          "sizes": "515x514",
+          "src": "/assets/images/camera_512px.png",
+          "sizes": "512x512",
           "type": "image/png",
           "purpose": "maskable"
         },

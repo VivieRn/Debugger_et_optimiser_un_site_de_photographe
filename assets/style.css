@@ -62,6 +62,11 @@ body {
   z-index: -1;
 }
 
+.photoNina {
+  max-width: 420px;
+  height: auto;
+}
+
 .picture {
   flex: 1;
   margin: 0 20px;
@@ -102,8 +107,8 @@ body {
 }
 .nav-pills .nav-link.active-tag,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #beb45a;
+  color: white;
+  background-color: black;
   border-radius: 0;
 }
 .nav-pills .nav-link {
@@ -148,6 +153,7 @@ body {
   font-family: Spectral;
   font-style: italic;
   font-weight: 300;
+  font-size: 25px;
 }
 .quote__author {
   font-family: Spectral;
