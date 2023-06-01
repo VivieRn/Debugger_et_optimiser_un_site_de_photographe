@@ -1,28 +1,17 @@
 if ("serviceWorker" in navigator) {
-  try {
-    const registration = navigator.serviceWorker.getRegistration();
-    if (!registration) {
-      // Service worker non enregistré, on l'installe
-      const newRegistration = navigator.serviceWorker.register(
-        "https://viviern.github.io/serviceWorker.js",
-        {
-          scope:
-            "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/",
-        }
+  navigator.serviceWorker
+    .register("'https://viviern.github.io/serviceWorker.js", {
+      scope: "'https://viviern.github.io/'",
+    })
+    .then(function (registration) {
+      console.log(
+        "ServiceWorker registration successful with scope: ",
+        registration.scope
       );
-      if (newRegistration.installing) {
-        console.log("Installation du service worker en cours");
-      } else if (newRegistration.waiting) {
-        console.log("Service worker installé");
-      } else if (newRegistration.active) {
-        console.log("Service worker actif");
-      }
-    } else {
-      console.log("Service worker déjà enregistré");
-    }
-  } catch (error) {
-    console.error(`L'enregistrement a échoué : ${error}`);
-  }
+    })
+    .catch(function (error) {
+      console.log("ServiceWorker registration failed: ", error);
+    });
 }
 
 const whitelistedOrigins = ["https://viviern.github.io/"];
