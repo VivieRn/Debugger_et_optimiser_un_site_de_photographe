@@ -1,11 +1,8 @@
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register(
-      "/Debugger_et_optimiser_un_site_de_photographe/serviceWorker.js",
-      {
-        scope: "/Debugger_et_optimiser_un_site_de_photographe/",
-      }
-    )
+    .register("'https://viviern.github.io/serviceWorker.js", {
+      scope: "'https://viviern.github.io/'",
+    })
     .then(function (registration) {
       console.log(
         "ServiceWorker registration successful with scope: ",
