@@ -1,23 +1,36 @@
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("https://viviern.github.io/serviceWorker.js", {
-      scope: "https://viviern.github.io/",
-    })
-    .then(function (registration) {
-      console.log(
-        "ServiceWorker registration successful with scope: ",
-        registration.scope
-      );
-    })
-    .catch(function (error) {
-      console.log("ServiceWorker registration failed: ", error);
-    });
-}
+const registerServiceWorker = async () => {
+  if ("serviceWorker" in navigator) {
+    try {
+      const registration = await navigator.serviceWorker.getRegistration();
+      if (!registration) {
+        // Service worker non enregistré, on l'installe
+        const newRegistration = await navigator.serviceWorker.register(
+          "https://viviern.github.io/serviceWorker.js",
+          {
+            scope: "https://viviern.github.io/",
+          }
+        );
+        if (newRegistration.installing) {
+          console.log("Installation du service worker en cours");
+        } else if (newRegistration.waiting) {
+          console.log("Service worker installé");
+        } else if (newRegistration.active) {
+          console.log("Service worker actif");
+        }
+      } else {
+        console.log("Service worker déjà enregistré");
+      }
+    } catch (error) {
+      console.error(`L'enregistrement a échoué : ${error}`);
+    }
+  }
+};
 
 const whitelistedOrigins = [
   "http://localhost",
   "http://localhost:5500",
   "http://127.0.0.1:5500",
+  "https://viviern.github.io/",
   "https://viviern.github.io/",
 ];
 
