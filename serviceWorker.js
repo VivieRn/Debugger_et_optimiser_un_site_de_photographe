@@ -1,7 +1,7 @@
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("'https://viviern.github.io/serviceWorker.js", {
-      scope: "'https://viviern.github.io/'",
+    .register("https://viviern.github.io/serviceWorker.js", {
+      scope: "https://viviern.github.io/",
     })
     .then(function (registration) {
       console.log(
@@ -18,6 +18,7 @@ const whitelistedOrigins = [
   "http://localhost",
   "http://localhost:5500",
   "http://127.0.0.1:5500",
+  "https://viviern.github.io/",
 ];
 
 const whitelistedPathRegex = /^\/api\/(?!.*\.(?:jpe?g|png)$)[^/]*$/;
