@@ -1,7 +1,7 @@
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("'https://viviern.github.io/serviceWorker.js", {
-      scope: "'https://viviern.github.io/'",
+    .register("https://viviern.github.io/serviceWorker.js", {
+      scope: "https://viviern.github.io/",
     })
     .then(function (registration) {
       console.log(
