@@ -26,6 +26,8 @@ const registerServiceWorker = async () => {
   }
 };
 
+registerServiceWorker();
+
 const whitelistedOrigins = [
   "http://localhost",
   "http://localhost:5500",
@@ -33,8 +35,6 @@ const whitelistedOrigins = [
   "https://viviern.github.io/",
   "https://viviern.github.io/",
 ];
-
-const whitelistedPathRegex = /^\/api\/(?!.*\.(?:jpe?g|png)$)[^/]*$/;
 
 // Version du Service Worker
 const version = "v1";
