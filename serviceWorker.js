@@ -1,10 +1,10 @@
 if ("serviceWorker" in navigator) {
   try {
-    const registration = await navigator.serviceWorker.getRegistration();
+    const registration = navigator.serviceWorker.getRegistration();
     if (!registration) {
       // Service worker non enregistré, on l'installe
-      const newRegistration = await navigator.serviceWorker.register(
-        "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/serviceWorker.js",
+      const newRegistration = navigator.serviceWorker.register(
+        "https://viviern.github.io/serviceWorker.js",
         {
           scope:
             "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/",
