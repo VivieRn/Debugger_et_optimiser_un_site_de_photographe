@@ -28,12 +28,7 @@ const registerServiceWorker = async () => {
 
 registerServiceWorker();
 
-const whitelistedOrigins = [
-  "http://localhost",
-  "http://localhost:5500",
-  "http://127.0.0.1:5500",
-  "https://viviern.github.io/",
-];
+const whitelistedOrigins = ["https://viviern.github.io/"];
 
 // Version du Service Worker
 const version = "v1";
