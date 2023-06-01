@@ -6,7 +6,8 @@ if ("serviceWorker" in navigator) {
       const newRegistration = await navigator.serviceWorker.register(
         "https://viviern.github.io/serviceWorker.js",
         {
-          scope: "https://viviern.github.io/",
+          scope:
+            "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/",
         }
       );
       if (newRegistration.installing) {
