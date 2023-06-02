@@ -2,7 +2,7 @@
     "name": "Nina Carducci - Photographe",
     "short_name": "N.C. Photos",
     "description": "Nina Carducci - Photographe preofessionelle",
-    "start_url": "/index.html",
+    "start_url": "https://viviern.github.io/index.html",
     "display": "standalone",
     "orientation" : "natural",
     "background_color": "white",
