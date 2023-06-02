@@ -3,7 +3,8 @@ if ("serviceWorker" in navigator) {
     .register(
       "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/serviceWorker.js",
       {
-        scope: "https://viviern.github.io/",
+        scope:
+          "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/",
       }
     )
     .then(function (registration) {
