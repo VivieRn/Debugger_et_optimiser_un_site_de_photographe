@@ -94,8 +94,18 @@ self.addEventListener("activate", function (event) {
 
 self.addEventListener("fetch", function (event) {
   event.respondWith(
-    caches.match(event.request).then(function (response) {
-      return response || fetch(event.request);
+    caches.open(version).then(function (cache) {
+      return cache.match(event.request).then(function (response) {
+        return (
+          response ||
+          fetch(event.request).then(function (networkResponse) {
+            if (isWhitelistedOrigin(event.request)) {
+              cache.put(event.request, networkResponse.clone());
+            }
+            return networkResponse;
+          })
+        );
+      });
     })
   );
 });
