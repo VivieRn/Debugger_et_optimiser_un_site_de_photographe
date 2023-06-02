@@ -11,8 +11,7 @@
         {
           "src": "/assets/images/camera_144px.png",
           "sizes": "144x144",
-          "type": "image/png",
-          "purpose": "maskable"
+          "type": "image/png"
         },
         {
           "src": "/assets/images/camera_512px.png",
