@@ -2,7 +2,7 @@ const registerServiceWorker = async () => {
   if ("serviceWorker" in navigator) {
     try {
       const registration = await navigator.serviceWorker.getRegistration(
-        "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/serviceWorker.js"
+        "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/"
       );
       if (!registration) {
         const newRegistration = await navigator.serviceWorker.register(
