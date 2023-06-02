@@ -1,7 +1,9 @@
 const registerServiceWorker = () => {
   if ("serviceWorker" in navigator) {
     try {
-      const registration = navigator.serviceWorker.getRegistration();
+      const registration = navigator.serviceWorker.getRegistration(
+        "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/serviceWorker.js"
+      );
       if (!registration) {
         const newRegistration = navigator.serviceWorker.register(
           "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/serviceWorker.js",
@@ -29,7 +31,7 @@ const registerServiceWorker = () => {
 const whitelistedOrigins = ["https://viviern.github.io/"];
 
 // Version du Service Worker
-const version = "v1";
+const version = "v1-NCP";
 
 // Fichiers à mettre en cache
 const filesToCache = [
