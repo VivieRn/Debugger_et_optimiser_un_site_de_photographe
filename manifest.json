@@ -12,7 +12,7 @@
           "src": "/assets/images/camera_144px.png",
           "sizes": "144x144",
           "type": "image/png",
-          "purpose": "any"
+          "purpose": "any maskable"
         },
         {
           "src": "/assets/images/camera_512px.png",
