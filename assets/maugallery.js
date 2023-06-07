@@ -270,10 +270,7 @@
       lightbox.style.display = "block";
       lightbox.setAttribute("aria-hidden", "false");
       var lightboxImage = lightbox.querySelector(".lightboxImage");
-      lightboxImage.setAttribute(
-        "srcset",
-        element.getAttribute("data-lightbox-srcset")
-      );
+      lightboxImage.setAttribute("srcset", element.getAttribute("srcset"));
       lightbox.classList.add("show");
       if (lightbox.classList.contains("show")) {
         addCloseOutsideListener(lightboxId);
@@ -324,7 +321,7 @@
       let prev = null;
 
       imagesCollection.forEach(function (img, i) {
-        if (img.getAttribute("data-lightbox-srcset") === activeSrcset) {
+        if (img.getAttribute("srcset") === activeSrcset) {
           index = i;
         }
       });
@@ -364,7 +361,7 @@
       let next = null;
 
       imagesCollection.forEach(function (img, i) {
-        if (img.getAttribute("data-lightbox-srcset") === activeSrcset) {
+        if (img.getAttribute("srcset") === activeSrcset) {
           index = i;
         }
       });
