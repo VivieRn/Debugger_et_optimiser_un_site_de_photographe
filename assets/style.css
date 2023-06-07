@@ -106,6 +106,10 @@ body {
 .gallery .nav {
   justify-content: center;
 }
+.tags-bar {
+  justify-content: center;
+  font-size: medium;
+}
 .nav-pills .nav-link.active-tag,
 .nav-pills .show > .nav-link {
   color: rgb(11, 11, 11);
