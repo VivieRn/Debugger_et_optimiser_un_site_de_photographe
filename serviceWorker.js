@@ -35,15 +35,15 @@ const version = "v1-NCP";
 
 // Fichiers à mettre en cache
 const filesToCache = [
-  "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/serviceWorker.js",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/maugallery.js",
-  "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/scripts.js",
+];
+/*"https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/scripts.js",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/bootstrap/bootstrap.bundle.js",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/bootstrap/bootstrap.bundle.js.map",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/bootstrap/bootstrap.bundle.min.js",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/bootstrap/bootstrap.bundle.min.js.map",
-];
-/*"./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_large.webp",
+
+"./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_large.webp",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_large.webp",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_large.webp",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/nina_large.webp",
