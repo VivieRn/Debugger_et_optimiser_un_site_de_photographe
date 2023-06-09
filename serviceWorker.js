@@ -35,6 +35,7 @@ const version = "v1-NCP";
 
 // Fichiers à mettre en cache
 const filesToCache = [
+  "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/serviceWorker.js",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/maugallery.js",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/bootstrap/bootstrap.bundle.js",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/bootstrap/bootstrap.bundle.js.map",
