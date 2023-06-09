@@ -42,8 +42,21 @@ const filesToCache = [
   "./assets/bootstrap/bootstrap.bundle.js.map",
   "./assets/bootstrap/bootstrap.bundle.min.js",
   "./assets/bootstrap/bootstrap.bundle.min.js.map",
+  "./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_large.webp",
+  "./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_large.webp",
+  "./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_large.webp",
+  "./assets/images/nina_large.webp",
+  "./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_medium.webp",
+  "./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_medium.webp",
+  "./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_medium.webp",
+  "./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_medium.webp",
+  "./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_medium.webp",
+  "./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_medium.webp",
+  "./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_medium.webp",
+  "./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_medium.webp",
+  "./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_medium.webp",
+  "./assets/images/camera_large.webp",
 ];
-
 // Vérifie si l'origine est autorisée
 function isWhitelistedOrigin(request) {
   const origin = request.origin || request.url;
