@@ -42,7 +42,7 @@ const filesToCache = [
   "./assets/bootstrap/bootstrap.bundle.js.map",
   "./assets/bootstrap/bootstrap.bundle.min.js",
   "./assets/bootstrap/bootstrap.bundle.min.js.map",
-  "viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_large.webp",
+  "./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_large.webp",
   /*"https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_large.webp",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_large.webp",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/nina_large.webp",
