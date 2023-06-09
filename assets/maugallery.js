@@ -378,8 +378,8 @@
     }
 
     // Fonction pour initialiser la grille de galerie
-    function init(element, options) {
-      var gallery = document.querySelector(element);
+    async function init(element, options) {
+      var gallery = await document.querySelector(element);
       gallery.style.display = "flex";
       gallery.classList.add("row");
       createRowWrapper(gallery);
