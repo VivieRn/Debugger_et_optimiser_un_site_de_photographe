@@ -42,7 +42,8 @@ const filesToCache = [
   "./assets/bootstrap/bootstrap.bundle.js.map",
   "./assets/bootstrap/bootstrap.bundle.min.js",
   "./assets/bootstrap/bootstrap.bundle.min.js.map",
-  /*"./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_large.webp",
+];
+/*"./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_large.webp",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_large.webp",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_large.webp",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/nina_large.webp",
@@ -56,7 +57,7 @@ const filesToCache = [
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_medium.webp",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_medium.webp",
   "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/camera_large.webp",*/
-];
+
 // Vérifie si l'origine est autorisée
 function isWhitelistedOrigin(request) {
   const origin = request.origin || request.url;
