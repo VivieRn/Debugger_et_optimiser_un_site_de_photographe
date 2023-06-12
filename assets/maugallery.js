@@ -86,8 +86,8 @@
 
         var elapsed = currentTime - startTime;
         var opacity = elapsed / duration;
-        var positionX = (elapsed / duration) * 50; // Move 20px to the right
-        var positionY = (elapsed / duration) * 50; // Move 20px down
+        var positionX = (elapsed / duration) * 50;
+        var positionY = (elapsed / duration) * 50;
 
         element.style.opacity = Math.min(opacity, 1);
         element.style.transform =
