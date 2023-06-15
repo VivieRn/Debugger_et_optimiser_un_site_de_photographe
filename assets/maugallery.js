@@ -213,7 +213,7 @@
       lightbox.setAttribute("aria-hidden", "true");
 
       var modalDialog = document.createElement("div");
-      modalDialog.classList.add("modal-dialog");
+      modalDialog.classList.add("modal-dialog", "h-auto");
       modalDialog.setAttribute("role", "document");
 
       var modalContent = document.createElement("div");
