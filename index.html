@@ -72,8 +72,8 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "image": [
-        "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/nina_large.webp"
-       ],
+          "https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/assets/images/nina_large.webp"
+        ],
         "name": "Nina Carducci | Shooting photos professionnel à Bordeaux",
         "address": {
           "@type": "PostalAddress",
@@ -102,20 +102,20 @@
     </script>
   </head>
   <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-6JPMPBE4TY"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-6JPMPBE4TY");
-  </script>
   <body>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6JPMPBE4TY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6JPMPBE4TY");
+    </script>
     <nav>
       <div class="top-header">
         <h1 class="name">Nina Carducci</h1>
@@ -178,6 +178,11 @@
                 ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_small.webp   650w
               "
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_xlarge.webp"
+              sizes="
+                (min-width: 2560px) 1921px,
+                (min-width: 1920px) 1200px,
+                650px
+              "
               width="1921"
               height="888"
               class="d-block w-100 h-auto"
@@ -192,6 +197,11 @@
                 ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_small.webp   650w
               "
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_xlarge.webp"
+              sizes="
+                (min-width: 2560px) 1921px,
+                (min-width: 1920px) 1200px,
+                650px
+              "
               width="1921"
               height="888"
               class="d-block w-100 h-auto"
@@ -206,6 +216,11 @@
                 ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_small.webp   650w
               "
               src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_xlarge.webp"
+              sizes="
+                (min-width: 2560px) 1921px,
+                (min-width: 1920px) 1200px,
+                650px
+              "
               width="1921"
               height="888"
               class="d-block w-100 h-auto"
@@ -273,6 +288,7 @@
             srcset="
               ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_medium.webp 330w
             "
+            sizes="100vw"
             loading="lazy"
             alt="Jeu de lumière sur scène"
           />
@@ -284,6 +300,7 @@
             srcset="
               ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_medium.webp 293w
             "
+            sizes="100vw"
             loading="lazy"
             alt="Photo d'un banal cadre en costard cravatte"
           />
@@ -295,6 +312,7 @@
             srcset="
               ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_medium.webp 440w
             "
+            sizes="100vw"
             loading="lazy"
             alt="Photo d'une réunion"
           />
@@ -306,6 +324,7 @@
             srcset="
               ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_medium.webp 440w
             "
+            sizes="100vw"
             loading="lazy"
             alt="Mains se joignant en signe d'union lors d'un mariage"
           />
@@ -317,6 +336,7 @@
             srcset="
               ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_medium.webp 294w
             "
+            sizes="100vw"
             loading="lazy"
             alt="Abe Tunji"
           />
@@ -328,6 +348,7 @@
             srcset="
               ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_medium.webp 293w
             "
+            sizes="100vw"
             loading="lazy"
             alt="Photo de jeune mariées"
           />
@@ -339,6 +360,7 @@
             srcset="
               ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_medium.webp 293w
             "
+            sizes="100vw"
             loading="lazy"
             alt="Nino Van Prattenburg"
           />
@@ -350,6 +372,7 @@
             srcset="
               ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_medium.webp 440w
             "
+            sizes="100vw"
             loading="lazy"
             alt="Austin neil chantant son hit régionnal"
           />
@@ -361,6 +384,7 @@
             srcset="
               ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_medium.webp 440w
             "
+            sizes="100vw"
             loading="lazy"
             alt="Femme se faisant passer pour une avocate"
           />
@@ -466,21 +490,31 @@
               ./assets/images/camera_144px.png  114w,
               ./assets/images/camera_large.webp 512w
             "
+            sizes="
+              (max-width: 767px) 114px,
+              (max-width: 991px) 114px,
+              512px
+            "
             width="359"
             height="576"
             loading="lazy"
             class="h-auto"
             alt="Photo de caméra"
           />
-          <div itemprop="http://schema.org/Photographer">
-            <span itemprop="”name”"
-              >Nina Carducci | Photographe professionnelle</span
+          <div itemscope itemtype="http://schema.org/localBusiness">
+            <span itemprop="name"
+              >Nina Carducci | Shooting photos professionnel à Bordeaux</span
             >
-            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="”streetAddress”">3 rue des Jardins</span>
-            <span itemprop="”addressLocality”">Bordeaux</span>,
-            <span itemprop="”addressRegion”"> Bordeaux</span>
-            <span itemprop="”postalCode”">33000</span>
+            <div
+              itemprop="address"
+              itemscope
+              itemtype="http://schema.org/PostalAddress"
+            >
+              <span itemprop="streetAddress">3 rue des Jardins</span>
+              <span itemprop="addressLocality">Bordeaux</span>,
+              <span itemprop="addressRegion">Bordeaux</span>
+              <span itemprop="postalCode">33000</span>
+            </div>
           </div>
         </div>
       </div>
